@@ -6,6 +6,6 @@ cache:
     - node_modules
 script:
   - npm install --save-dev gh-pages
-  - npm test
+  - npm test --passWithNoTests
   - npm run build
   - npm run deploy
