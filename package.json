@@ -9,6 +9,11 @@
   },
   "homepage":"https://xerohero.github.io/JS-App",
   "scripts": { 
+    "clean-force": "npm cache clean --force",
+    "remove-modules": "rm -rf node_modules", 
+    "install-npm": "npm install",
+    "cache-verify": "npm cache verify",
+    "clean":"npm run clean",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
