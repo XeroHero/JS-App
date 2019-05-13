@@ -5,5 +5,7 @@ cache:
   directories:
     - node_modules
 script:
+  - npm install --save-dev gh-pages
   - npm test
   - npm run build
+  - npm run deploy
