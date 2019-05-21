@@ -13,8 +13,8 @@
     "remove-modules": "rm -rf node_modules",
     "install-npm": "npm install --save-dev gh-pages unirest",
     "build": "react-scripts build",
-    "test": "react-scripts test --passWithNoTests",
-      },
+    "test": "react-scripts test --passWithNoTests"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
