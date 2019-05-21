@@ -9,6 +9,7 @@ script:
   - npm run remove-modules
   - npm run install-npm
   - npm install --save-dev gh-pages
+  - npm install unirest
   - npm test --passWithNoTests
   - npm run build
 
