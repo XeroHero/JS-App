@@ -8,9 +8,7 @@ script:
   - npm run clean-force
   - npm run remove-modules
   - npm run install-npm
-  - npm install --save-dev gh-pages
-  - npm install unirest
-  - npm test --passWithNoTests
+  - npm run test
   - npm run build
 
 deploy:
