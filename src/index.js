@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import FacebookLogin from '../src/facebook';
 import FacebookLoginWithButton from '../src/facebook-with-button'
 
