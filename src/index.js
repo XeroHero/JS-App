@@ -1,70 +1,65 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Router, Route, Link, browserHistory } from 'react-router';
+import FacebookLogin from '../src/facebook';
+import FacebookLoginWithButton from '../src/facebook-with-button'
 
+const responseFacebook = (response) => {
+  console.log(response);
+};
 
-
-
-class Square extends React.Component {
+class Base extends Component {
   render() {
-    return (
-      <button className="square">
-        {/* TODO */}
-      </button>
-    );
-  }
-}
-
-class Board extends React.Component {
-  renderSquare(i) {
-    return <Square />;
-  }
-
-  render() {
-    const status = 'Next player: X';
-
     return (
       <div>
-        <div className="status">{status}</div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+        <Link to="/dummy">Route to dummy page</Link>
+
+        <div>
+          <p>Facebook login with default button and styling</p>
+          <FacebookLoginWithButton
+            appId="490652501351020"
+            autoLoad
+            callback={responseFacebook}
+            icon="fa-facebook"
+          />
         </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
+
+        <div>
+          <p>Facebook login with render prop (and no styling provided out the box)</p>
+          <FacebookLogin
+            appId="490652501351020"
+            autoLoad
+            callback={responseFacebook}
+            render={renderProps => (
+              <button onClick={renderProps.onClick}>This is my custom FB button</button>
+            )}
+          />
         </div>
       </div>
     );
   }
 }
 
-class Game extends React.Component {
+class Dummy extends Component {
   render() {
     return (
-      <div className="game">
-        <div className="game-board">
-          <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
+      <div>
+        <Link to="/">Back</Link>
+        <h1>
+          This is just a dummy page to test the button<br />
+          <a href="https://fb.com/">
+            survives back and forth routing
+          </a>
+        </h1>
       </div>
     );
   }
 }
 
-// ========================================
-
 ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
+  <Router history={browserHistory}>
+    <Route path="/" component={Base}/>
+    <Route path="/dummy" component={Dummy}/>
+  </Router>,
+  document.getElementById('demo')
 );

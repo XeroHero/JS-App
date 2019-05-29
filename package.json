@@ -11,7 +11,7 @@
   "scripts": {
     "clean-force": "npm cache clean --force",
     "remove-modules": "rm -rf node_modules",
-    "install-npm": "npm install --save-dev gh-pages unirest",
+    "install-npm": "npm install --save-dev gh-pages unirest react-facebook-login --save --force",
     "build": "react-scripts build",
     "test": "react-scripts test --passWithNoTests"
   },
