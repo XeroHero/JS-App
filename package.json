@@ -11,7 +11,7 @@
   "scripts": {
     "clean-force": "npm cache clean --force",
     "remove-modules": "rm -rf node_modules",
-    "install-npm": "npm install node-sass --save --save-dev gh-pages react-router@3 --save react-router-dom --save react-facebook-login --save --force",
+    "install-npm": "npm install --silent node-sass --save --save-dev gh-pages react-router@3 --save react-router-dom --save react-facebook-login --save --force",
     "build": "react-scripts build",
     "test": "react-scripts test --passWithNoTests"
   },
