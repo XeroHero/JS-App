@@ -4,8 +4,8 @@ import { Router, Route, browserHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import FacebookLogin from '../src/facebook';
 import FacebookLoginWithButton from '../src/facebook-with-button';
-ReactDOM.render(<index />, document.getElementById('fbLoginComponent'));
 
+const e = React.createElement;
 const responseFacebook = (response) => {
   console.log(response);
 };
@@ -65,3 +65,6 @@ ReactDOM.render(
   </Router>,
   document.getElementById('demo')
 );
+
+const domContainer = document.querySelector('#fbContainer');
+ReactDOM.render(e(fbLoginIndex), domContainer);
