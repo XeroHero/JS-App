@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import FacebookLogin from '../src/facebook';
 import FacebookLoginWithButton from '../src/facebook-with-button'
 
+ReactDOM.render(<App />, document.getElementById('root'));
+
 const responseFacebook = (response) => {
   console.log(response);
 };
