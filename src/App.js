@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
 import { Link } from 'react-router-dom';
-import logo from "./logo.svg"
 import "./App.css"
 import FacebookLogin from './facebook.js';
 import FacebookLoginWithButton from './facebook-with-button.js';
 
-const e = React.createElement;
 const responseFacebook = (response) => {
   console.log(response);
 };
