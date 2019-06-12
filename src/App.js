@@ -68,7 +68,7 @@ ReactDOM.render(
   document.getElementById('demo')
 );
 
-const domContainer = document.querySelector('#fbContainer');
-ReactDOM.render(e(fbLoginIndex), domContainer);
+// const domContainer = document.querySelector('#fbContainer');
+// ReactDOM.render(e(fbLoginIndex), domContainer);
 
 export default App
