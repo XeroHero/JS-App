@@ -62,7 +62,7 @@ class Dummy extends Component {
 
 ReactDOM.render(
   <Router history={browserHistory}>
-    <Route path="/" component={Base}/>
+    <Route path="/" component={App}/>
     <Route path="/dummy" component={Dummy}/>
   </Router>,
   document.getElementById('demo')
