@@ -33,7 +33,7 @@ export default class Facebook extends Component {
           style={{
             width: "400px",
             margin: "auto",
-            background: "#f4f4f4",
+            background: "#7adeac",
             padding: "20px"
           }}
         >
