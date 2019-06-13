@@ -8,7 +8,7 @@ script:
   - npm run clean-force
   - npm run remove-modules
   - npm run install-npm
-  - npm run test
+  # - npm run test
   - npm run build
 
 deploy:
