@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Facebook Auth Example</h1>
+        <h1 className="App-title">Welcome to GetVolvd</h1>
         <p>
-          To get started, authenticate with Facebook.
+          To get started, please log in with Facebook.
         </p>
         <Facebook />
         <a
