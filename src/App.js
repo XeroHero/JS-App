@@ -15,10 +15,10 @@ function App() {
         </p>
         <Facebook />
 
-        </br>
-        </br>
-        </br>
-
+      <p></p>
+      <p></p>
+      <p></p>
+      
         <p>
           <a href="static/privacy.html"> For information on our use of your Facebook data click here</a>
         <a
