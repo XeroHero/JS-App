@@ -14,6 +14,13 @@ function App() {
           To get started, please log in with Facebook.
         </p>
         <Facebook />
+
+        </br>
+        </br>
+        </br>
+
+        <p>
+          <a href="static/privacy.html"> For information on our use of your Facebook data click here</a>
         <a
           className="App-link"
           href="https://reactjs.org"
