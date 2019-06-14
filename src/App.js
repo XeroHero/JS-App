@@ -18,17 +18,15 @@ function App() {
       <p></p>
       <p></p>
       <p></p>
-      
-        <p>
-          <a href="static/privacy.html"> For information on our use of your Facebook data click here</a>
+
+ For information on our use of your Facebook data click
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="static/privacy.html"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          >
+here        </a>
       </header>
     </div>
   );
