@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/XeroHero/JS-App.svg?branch=master)](https://travis-ci.com/XeroHero/JS-App)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6a6ed604-50d3-4dab-8734-3c11d03bd97c/deploy-status)](https://app.netlify.com/sites/volve/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/86f7834e-7861-41e2-9f4a-518fbb009475/deploy-status)](https://app.netlify.com/sites/volve/deploys)
 
 Live prod page for this project located [here](https://xerohero.github.com/JS-App/)
 
