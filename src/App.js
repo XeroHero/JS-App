@@ -22,7 +22,7 @@ function App() {
  For information on our use of your Facebook data click
         <a
           className="App-link"
-          href="static/privacy.html"
+          href="privacy.html"
           target="_blank"
           rel="noopener noreferrer"
           >
